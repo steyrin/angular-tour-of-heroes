@@ -20,8 +20,9 @@ export class DashboardComponent implements OnInit {
   }
 
   getHeroes(): void {
-    this.heroService.getHeroesw().subscribe(heroes => this.heroes = heroes.slice(2,6));
-    //this.heroService.showSpecialHero().subscribe(heroes => this.heroes = heroes);
+    this.heroService.getHeroesw().subscribe(heroes => this.heroes = heroes.slice(2,6)); //avtomatik secilmishler
+
+    //this.heroService.showSpecialHero().subscribe(heroes => this.heroes = heroes);   //favoriti ozun secmek metodu
 
   }
 
