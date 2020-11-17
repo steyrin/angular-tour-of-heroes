@@ -1,0 +1,26 @@
+
+
+<div *ngIf="hero"> <!--Eger secilmish hero varsa => 
+                               detail gorsetsin and textbox-->
+    
+                             
+    
+    <h2>{{hero.name | uppercase}} Details   <input [checked]="thisHeroFav" class="star" type="checkbox" (change)="onChangee($event)"></h2>
+
+    <div>
+        <span>id:</span>{{hero.id}} <!--deyishende ishlemir asagdaki-->
+    </div>
+
+    <div>
+        <label>Name:
+            <input style="  height: 2em;
+            font-size: 1em;
+            padding-left: .4em;" [(ngModel)]="hero.name" placeholder="name"/>
+        </label>
+    </div>
+    <button (click)="save()" >Save</button>
+
+       
+    <button (click)="goBack()" >Return</button>
+
+</div>

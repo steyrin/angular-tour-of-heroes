@@ -1,0 +1,48 @@
+/* HeroDetailComponent's private CSS styles */
+label {
+    display: inline-block;
+    width: 3em;
+    margin: .5em 0;
+    color: #607D8B;
+    font-weight: bold;
+  }
+
+  button {
+    margin-top: 20px;
+    margin-right: 20px ;
+    font-family: Arial;
+    background-color: #eee;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #cfd8dc;
+  }
+  button:disabled {
+    background-color: #eee;
+    color: #ccc;
+    cursor: auto;
+  }
+
+
+  .star {
+    padding-top: 20px;
+    visibility:hidden;
+    font-size:30px;
+    cursor:pointer;
+    height: 30px;
+    
+}
+.star:before {
+   content: "\2606";
+   position: absolute;
+   visibility:visible;
+   color: black;
+}
+.star:checked:before {
+   content: "\2605";
+   position: absolute;
+   color: yellow;
+}

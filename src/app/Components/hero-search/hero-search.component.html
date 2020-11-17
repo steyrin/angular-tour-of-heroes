@@ -1,0 +1,16 @@
+<div id="search-component">
+    <h4><label for="search-box">Hero Search</label></h4>
+  
+  <form class="form-inline">  
+    <input #searchBox id="search-box" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button (click)="search(searchBox.value)" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+
+  </form>
+    <ul class="search-result">
+      <li  *ngFor="let hero of heroes$ | async" >
+        <a routerLink="/detail/{{hero.id}}">
+          {{hero.name}}
+        </a>
+      </li>
+    </ul>
+  </div>
