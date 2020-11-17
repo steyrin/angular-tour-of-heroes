@@ -27,4 +27,5 @@ export class DashboardComponent implements OnInit {
 
   name: string = "Tm";
   name: string = "Tm";
+  name: string = "Tm";
 }
