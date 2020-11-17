@@ -25,5 +25,6 @@ export class DashboardComponent implements OnInit {
 
   }
 
-  name: string = "Tom";
+  name: string = "Tm";
+  name: string = "Tm";
 }
