@@ -22,5 +22,6 @@
     background-color: #cfd8dc;
   }
   nav a.active {
-    color: #039be5;
+    color:white;
+    background-color:  #334953 ;
   }
