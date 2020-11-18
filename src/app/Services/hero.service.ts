@@ -37,7 +37,7 @@ export class HeroService {
 
   specialHeroes:Hero[] = [];
 
-
+  heroes$: Observable<Hero[]>;
 
   getHeroesw(): Observable<Hero[]> {
     // TODO: send the message _after_ fetching the heroes

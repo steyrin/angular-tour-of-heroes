@@ -6,11 +6,5 @@
     <button (click)="search(searchBox.value)" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 
   </form>
-    <ul class="search-result">
-      <li  *ngFor="let hero of heroes$ | async" >
-        <a routerLink="/detail/{{hero.id}}">
-          {{hero.name}}
-        </a>
-      </li>
-    </ul>
+  
   </div>

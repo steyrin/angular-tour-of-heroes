@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { from } from 'rxjs';
 import { Hero } from '../../Class/hero';
 import { HeroService } from '../../Services/hero.service';
-import { MessageService} from '../../Services/message.service'
-
+import { MessageService} from '../../Services/message.service';
+import {HeroSearchComponent} from '../hero-search/hero-search.component';
 
 @Component({
   selector: 'app-dashboard',
@@ -11,7 +12,8 @@ import { MessageService} from '../../Services/message.service'
 })
 export class DashboardComponent implements OnInit {
   heroes: Hero[] = [];
-
+  
+  
   constructor(private heroService: HeroService, private messageService: MessageService) { }
 
   ngOnInit(): void {
