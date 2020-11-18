@@ -70,6 +70,8 @@ export class HeroService {
 
   }
 
+
+
   searchHeroes(term: string): Observable<Hero[]> {
     if (!term.trim()) {
       // if not search term, return empty hero array.
